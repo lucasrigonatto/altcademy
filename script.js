@@ -6,6 +6,7 @@ $.ajax({
       console.log(response);
     },
     error: function (request, textStatus, errorMessage) {
-      console.log(errorMessage);
+      console.log(banana);
     }
   });
+
