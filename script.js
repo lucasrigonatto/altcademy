@@ -80,7 +80,7 @@ $(document).on('click', '.btn.delete', function (event) {
 
   $.ajax({
       type: 'DELETE',
-      url: 'https://fewd-todolist-api.onrender.com/tasks/' + id + '/mark_complete?api_key=241',
+      url: 'https://fewd-todolist-api.onrender.com/tasks/' + id + '?api_key=241',
       success: function (response, textStatus) {
 
         item.remove();
@@ -89,6 +89,7 @@ $(document).on('click', '.btn.delete', function (event) {
       error: function (request, textStatus, errorMessage) {
         console.log(errorMessage);
       }
+    
   });
 
 });
