@@ -100,7 +100,7 @@ $(document).on('click', '.btn.checkButton', function (event) {
   var id = item.attr("id");
 
   $.ajax({
-          type: 'GET',
+          type: 'PUT',
           url: 'https://fewd-todolist-api.onrender.com/tasks/' + id + '/mark_complete?api_key=241',
           dataType: 'json',
           success: function (response, textStatus) {
