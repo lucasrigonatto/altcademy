@@ -101,7 +101,7 @@ $(document).on('click', '.btn.checkButton', function (event) {
 
   $.ajax({
           type: 'PUT',
-          url: 'https://fewd-todolist-api.onrender.com/tasks/' + id + '/mark_complete?api_key=241',
+          url: 'https://fewd-todolist-api.onrender.com/tasks/' + id + '/?api_key=241',
           dataType: 'json',
           success: function (response, textStatus) {
   
